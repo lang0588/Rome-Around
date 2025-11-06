@@ -4,4 +4,6 @@
 <section class="hero-section">
 
     <div></div>
+
+    <h1>Hello World!</h1>
 </section>
