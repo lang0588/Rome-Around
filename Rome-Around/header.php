@@ -10,3 +10,5 @@
 <div class="main-nav"> <?php wp_nav_menu();?> </div>
 
 <h3> This is my header </h3>
+
+<h3>Test header</h3>
