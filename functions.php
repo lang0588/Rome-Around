@@ -41,4 +41,3 @@ function loading_bootstrap(){
 
 
 
-// add_action('wp_enqueue_scripts', 'loading_bootstrap');
