@@ -1,5 +1,5 @@
 <?php 
-function mexico_style(){
+function rome_style(){
     wp_enqueue_style(
         'rome_primary_stylesheet', //slug
         get_stylesheet_uri(), //gets the URL of the stylesheets
