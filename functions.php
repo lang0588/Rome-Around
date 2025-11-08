@@ -9,8 +9,9 @@ function rome_style(){
     );
 }
 add_action('wp_enqueue_scripts', 'rome_style');
-//add_action('hookName', 'functionName')
+// add_action('hookName', 'functionName')
 
+// function allowing bootstrap in css/js
 function loading_bootstrap(){
     wp_enqueue_style(
         'bootstrap-css',
@@ -27,5 +28,17 @@ function loading_bootstrap(){
         true
     );
 }
+    
 
-add_action('wp_enqueue_scripts', 'loading_bootstrap');
+?>
+
+
+
+
+
+
+
+
+
+
+// add_action('wp_enqueue_scripts', 'loading_bootstrap');
