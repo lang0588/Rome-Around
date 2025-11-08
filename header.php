@@ -17,7 +17,6 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item <?php if(is_front_page()) echo 'active'; ?>">
@@ -36,8 +35,9 @@
     </div>
 </nav>
 
+<!-- Header -->
 <header id="site-header">
-    <div class="hero-banner" style="background-image: url('<?php echo get_theme_file_uri('assets\images\colosseum.webp'); ?>');">
+    <div class="hero-banner" style="background-image: url('<?php echo get_theme_file_uri('assets/images/colosseum.webp'); ?>');">
         <div class="hero-content">
             <h1>Welcome to Our Site</h1>
             <p>Discover our world of creativity and innovation.</p>

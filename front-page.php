@@ -1,5 +1,5 @@
 <?php get_header();?>
-<p class="alert alert-danger">This is my front-page</p>
+
 
 
 
@@ -10,3 +10,4 @@
 
     <h1>Hello World!</h1>
 </section>
+<footer></footer>
