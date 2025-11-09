@@ -42,7 +42,7 @@ get_header();
             array('name'=>'filler text','image'=>'assets/images/hotel5.jpg','description'=>'Immerse yourself in nature and comfort.','rating'=>4)
         ) as $hotel_item) : ?>
             
-            
+            <!-- card design garbage from bootstrap  -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 d-flex align-items-stretch">
                 <div class="card h-100">
                     <img class="card-img-top" src="<?php echo get_theme_file_uri($hotel_item['image']); ?>" alt="<?php echo $hotel_item['name']; ?>">
@@ -50,7 +50,7 @@ get_header();
                         <h5 class="card-title"><?php echo $hotel_item['name']; ?></h5>
                         <p class="card-text small"><?php echo $hotel_item['description']; ?></p>
                         <div class="mt-auto">
-
+                            <!-- Hotel Rating system -->
                             <p class="hotel-rating mb-2">
                                 <!-- calculations for how many stars need to be displayed -->
                                  <!-- Dont ask me how i figured this out, this was during hour 14 of a sitting. I am so lost on what I have made at this point oml! -->
@@ -58,7 +58,7 @@ get_header();
                                     <?php echo ($i <= $hotel_item['rating']) ? '★' : '☆'; ?>
                                 <?php endfor; ?>
                             </p>
-
+                            <!-- Book now button -->
                             <a href="#" class="btn btn-primary btn-block">Book Now</a>
                         </div>
                     </div>
