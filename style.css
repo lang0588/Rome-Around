@@ -7,7 +7,7 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
 
-/* === HOTELS PAGE LAYOUT === */
+/* Hotel cards setup (hotels page) */
 .hotels-grid .row {
   display: block !important;
   width: 100% !important;
@@ -33,5 +33,68 @@
   height: 300px !important;
   object-fit: cover !important;
 }
+/* Hero banner overlay */
+.hero-banner {
+    background-color: rgba(8, 8, 8, 0.6); /* subtle overlay if using an image */
+    background-blend-mode: darken;
+    color: #FAF9F6;
+}
 
+/* Section titles */
+.hotels-grid h2 {
+    color: #8E001C;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Hotel cards */
+.hotels-grid .card {
+    background-color: #FFE5B4;
+    border: 2px solid #8E001C;
+    border-radius: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotels-grid .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(8, 8, 8, 0.2);
+}
+
+/* Card text */
+.hotels-grid .card-title {
+    color: #8E001C;
+}
+
+.hotels-grid .card-text {
+    color: #080808;
+}
+
+/* Rating stars */
+.hotel-rating {
+    color: #FFB300;
+    font-size: 1.2rem;
+}
+
+/* Book Now button */
+.hotels-grid .btn-primary {
+    background-color: #8E001C;
+    border-color: #8E001C;
+    color: #FAF9F6;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hotels-grid .btn-primary:hover {
+    background-color: #FFB300;
+    color: #080808;
+}
+
+/* Section spacing */
+.hotels-grid {
+    background-color: #FAF9F6;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 

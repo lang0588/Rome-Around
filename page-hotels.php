@@ -7,15 +7,7 @@ get_header();
 
 ?>
 
-<!-- site-header  -->
-<header id="site-header">
-    <div class="hero-banner" style="background-image: url('<?php echo get_theme_file_uri('assets/images/monastary.jpg'); ?>');">
-        <div class="hero-content text-center text-white py-5">
-            <h1>Our Hotels</h1>
-            <p>Look at some of our most popular hotel options!!!</p>
-        </div>
-    </div>
-</header>
+
 
 <!-- Hotels -->
 <section class="hotels-grid container py-5">
@@ -36,10 +28,10 @@ get_header();
             
 
             // Donna Camilla
-            array('name'=>'filler text','image'=>'assets\images\donna-camilla.jpg','description'=>'Relax by the beach with stunning views.','rating'=>5),
+            array('name'=>'Donna Camilla','image'=>'assets\images\donna-camilla.jpg','description'=>'Relax by the beach with stunning views.','rating'=>5),
 
             // Domus Monami
-            array('name'=>'filler text','image'=>'assets\images\domus-monami-luxury-suites.jpg','description'=>'Immerse yourself in nature and comfort.','rating'=>4)
+            array('name'=>'Domus Monami','image'=>'assets\images\domus-monami-luxury-suites.jpg','description'=>'Immerse yourself in nature and comfort.','rating'=>4)
         ) as $hotel_item) : ?>
             
             <!-- card design garbage from bootstrap  -->
