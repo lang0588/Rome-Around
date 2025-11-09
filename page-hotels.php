@@ -35,11 +35,11 @@ get_header();
             All rooms at Hotel Gioberti are spacious, soundproofed, and elegantly furnished..','rating'=>4.4),
             
 
-            // 
-            array('name'=>'filler text','image'=>'assets/images/hotel4.jpg','description'=>'Relax by the beach with stunning views.','rating'=>5),
+            // Donna Camilla
+            array('name'=>'filler text','image'=>'assets\images\donna-camilla.jpg','description'=>'Relax by the beach with stunning views.','rating'=>5),
 
-            // 
-            array('name'=>'filler text','image'=>'assets/images/hotel5.jpg','description'=>'Immerse yourself in nature and comfort.','rating'=>4)
+            // Domus Monami
+            array('name'=>'filler text','image'=>'assets\images\domus-monami-luxury-suites.jpg','description'=>'Immerse yourself in nature and comfort.','rating'=>4)
         ) as $hotel_item) : ?>
             
             <!-- card design garbage from bootstrap  -->

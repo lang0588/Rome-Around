@@ -7,7 +7,31 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
 
- .main-nav a{
-    color: green;
-    text-decoration: none;
- }
+/* === HOTELS PAGE LAYOUT === */
+.hotels-grid .row {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.hotels-grid .row > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin-bottom: 2rem !important;
+}
+
+.hotels-grid .card {
+  width: 100% !important;
+  border-radius: 0 !important;
+  border: none !important;
+  margin: 0 !important;
+}
+
+.hotels-grid .card-img-top {
+  width: 100% !important;
+  height: 300px !important;
+  object-fit: cover !important;
+}
+
+
