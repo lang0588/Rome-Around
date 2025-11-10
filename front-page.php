@@ -33,14 +33,14 @@
   ?>
 
         <!-- bootstrap stuff -->
-    <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-4 d-flex align-items-stretch">
+    <div class="col-12 mb-4 d-flex align-items-stretch">
       <div class="card h-100">
         <div class="card-body d-flex flex-column">
           <h5 class="card-title"><?php echo esc_html($home_item['name']); ?></h5>
           <p class="card-text small flex-grow-1"><?php echo esc_html($home_item['description']); ?></p>
 
           <!-- view more button -->
-           <a href="#" class="btn btn-primary btn-block">View More</a>
+           <a href="#" class="btn btn-primary btn-block">Learn More</a>
         </div> 
       </div> 
     </div> 
