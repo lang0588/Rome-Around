@@ -1,13 +1,13 @@
 <?php get_header();?>
-
-
-
-
-<?php get_footer();?>
 <section class="hero-section">
 
     <div></div>
 
-    <h1>Hello World!</h1>
+    <h1>Davin and Sara please add content to me :(</h1>
 </section>
+
+
+
+<?php get_footer();?>
+
 <footer></footer>
