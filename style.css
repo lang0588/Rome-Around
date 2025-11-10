@@ -244,3 +244,78 @@
     stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
 }
 
+.footer {
+    background-color: #080808;
+    color: #FAF9F6;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer h5 {
+    color: #8E001C;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.footer ul.footer-links {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul.footer-links li {
+    flex: 1;
+    margin-bottom: 0.5rem;
+}
+
+.footer ul.footer-links li a {
+    color: #FFB300;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    width: 100%;
+    text-align: center; /* centers text within column */
+}
+
+.footer ul.footer-links li a:hover {
+    color: #FFE5B4;
+}
+
+.footer .footer-divider {
+    border-top: 1px solid #8E001C;
+    margin: 2rem 0;
+}
+
+.footer p {
+    color: #FAF9F6;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    /* On desktop, make links evenly spaced vertically within column */
+    .footer ul.footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 180px; /* adjust based on number of links */
+    }
+
+    .footer ul.footer-links li a {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .footer .row > div {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .footer ul.footer-links li a {
+        text-align: center;
+    }
+}
+
+

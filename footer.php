@@ -1,8 +1,6 @@
 
 <?php wp_footer();?>
-
 <?php
-// Define link arrays for each column
 $footer_links_about = [
     ['title' => 'Home', 'url' => home_url()],
     ['title' => 'Attractions', 'url' => home_url('/attractions')],
@@ -25,14 +23,14 @@ $footer_links_contact = [
 ];
 ?>
 
-<footer class="custom-footer py-5">
-    <div class="container text-center text-md-left">
-        <div class="row">
+<footer class="footer">
+    <div class="container">
+        <div class="row text-center text-md-left">
 
             <!-- About Links -->
             <div class="col-md-4 mb-4">
                 <h5>About</h5>
-                <ul class="list-unstyled">
+                <ul class="footer-links">
                     <?php foreach($footer_links_about as $link): ?>
                         <li><a href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a></li>
                     <?php endforeach; ?>
@@ -42,7 +40,7 @@ $footer_links_contact = [
             <!-- Quick Links -->
             <div class="col-md-4 mb-4">
                 <h5>Quick Links</h5>
-                <ul class="list-unstyled">
+                <ul class="footer-links">
                     <?php foreach($footer_links_quick as $link): ?>
                         <li><a href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a></li>
                     <?php endforeach; ?>
@@ -52,7 +50,7 @@ $footer_links_contact = [
             <!-- Contact Links -->
             <div class="col-md-4 mb-4">
                 <h5>Contact</h5>
-                <ul class="list-unstyled">
+                <ul class="footer-links">
                     <?php foreach($footer_links_contact as $link): ?>
                         <li><a href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a></li>
                     <?php endforeach; ?>
@@ -70,8 +68,6 @@ $footer_links_contact = [
         </div>
     </div>
 </footer>
-
-
 
 
 </body>
