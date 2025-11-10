@@ -23,34 +23,31 @@ $footer_links_contact = [
 ];
 ?>
 
-<footer class="footer">
+<footer class="footer py-5">
     <div class="container">
         <div class="row text-center text-md-left">
 
-            <!-- About Links -->
             <div class="col-md-4 mb-4">
-                <h5>About</h5>
-                <ul class="footer-links">
+                <h5 class="footer-heading">About</h5>
+                <ul class="footer-links list-unstyled">
                     <?php foreach($footer_links_about as $link): ?>
                         <li><a href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
 
-            <!-- Quick Links -->
             <div class="col-md-4 mb-4">
-                <h5>Quick Links</h5>
-                <ul class="footer-links">
+                <h5 class="footer-heading">Quick Links</h5>
+                <ul class="footer-links list-unstyled">
                     <?php foreach($footer_links_quick as $link): ?>
                         <li><a href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
 
-            <!-- Contact Links -->
             <div class="col-md-4 mb-4">
-                <h5>Contact</h5>
-                <ul class="footer-links">
+                <h5 class="footer-heading">Contact</h5>
+                <ul class="footer-links list-unstyled">
                     <?php foreach($footer_links_contact as $link): ?>
                         <li><a href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a></li>
                     <?php endforeach; ?>
@@ -68,6 +65,8 @@ $footer_links_contact = [
         </div>
     </div>
 </footer>
+
+<?php wp_footer(); ?>
 
 
 </body>

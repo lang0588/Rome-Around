@@ -245,64 +245,75 @@
 }
 
 .footer {
-    background-color: #080808 !important;
-    color: #FAF9F6;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    background-color: #080808; /* Black background */
+    color: #FAF9F6; /* Baby Powder text */
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+    z-index: 2;
 }
 
-.footer h5 {
-    color: #8E001C;
-    font-weight: bold;
-    margin-bottom: 1rem;
+/* Footer headings (column titles) */
+.footer-heading {
+    color: #8E001C; /* Carmine */
+    font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
 }
 
-.footer ul.footer-links {
-    padding-left: 0;
+/* Footer link list */
+.footer-links {
     list-style: none;
-    display: flex;
-    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
 }
 
-.footer ul.footer-links li {
-    flex: 1;
-    margin-bottom: 0.5rem;
+.footer-links li {
+    margin-bottom: 0.6rem;
 }
 
-.footer ul.footer-links li a {
-    color: #FFB300;
+.footer-links li a {
+    color: #FFB300; /* Selective Yellow */
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.2s;
     display: block;
-    width: 100%;
-    text-align: center; /* centers text within column */
+    padding: 0.1rem 0;
 }
 
-.footer ul.footer-links li a:hover {
-    color: #FFE5B4;
+/* Hover effect for links */
+.footer-links li a:hover {
+    color: #FFE5B4; /* Peach hover */
+    transform: translateX(4px);
 }
 
-.footer .footer-divider {
-    border-top: 1px solid #8E001C;
-    margin: 2rem 0;
+/* Divider line */
+.footer-divider {
+    border-top: 1px solid #8E001C; /* Carmine */
+    margin: 2.5rem 0;
+    opacity: 0.5;
 }
 
+/* Footer copyright */
 .footer p {
     color: #FAF9F6;
     margin-bottom: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
 }
 
+/* Responsive behavior */
 @media (min-width: 768px) {
-    /* On desktop, make links evenly spaced vertically within column */
-    .footer ul.footer-links {
+    .footer-links {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 180px; /* adjust based on number of links */
     }
 
-    .footer ul.footer-links li a {
+    .footer-links li a {
         text-align: left;
     }
 }
@@ -313,9 +324,52 @@
         margin-bottom: 2rem;
     }
 
-    .footer ul.footer-links li a {
+    .footer-links li a {
         text-align: center;
     }
 }
+
+/* Optional: subtle shadow to separate from content above */
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), transparent);
+}
+
+/* Map Embed */
+/* Google Map container */
+.map-container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    height: 400px; 
+    overflow: hidden;
+    border: 3px solid #8E001C; /* Carmine border */
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.map-container:hover {
+    transform: scale(1.02); /* subtle hover effect */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .map-container {
+        height: 300px;
+    }
+}
+
 
 

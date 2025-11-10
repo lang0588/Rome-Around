@@ -61,4 +61,7 @@ get_header();
     </div>
 </section>
 
+<?php get_template_part('template-parts/section', 'map'); ?>
+
 <?php get_footer(); ?>
+
