@@ -7,6 +7,67 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
 
+ /* ____HOME PAGE CSS____ */
+.hero-section{
+    text-align: center;
+}
+
+.hero-section h1{
+    color: #8E001C !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+ .home-grid h2{
+    color: #8E001C !important;
+    font-weight: 700;
+}
+
+.plan-section{
+    margin-left: 25px;
+}
+
+.home-grid h3{
+    padding-top: 55px;
+}
+
+.home-grid .card {
+    background-color: #FFE5B4 !important;
+    border-radius: 0 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.home-grid .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(8, 8, 8, 0.2);
+}
+
+.home-grid .card-title {
+    color: #8E001C;
+}
+
+.home-grid .btn-primary {
+    background-color: #8E001C;
+    border-color: #8E001C;
+    color: #FAF9F6;
+    font-weight: bold;
+    width: 25%;
+    border-radius: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-grid .btn-primary:hover {
+    background-color: #FFB300;
+    color: #080808;
+}
+
+.home-grid {
+    background-color: #FAF9F6;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
 /* Hotel cards setup (hotels page) */
 .hotels-grid .row {
   display: block !important;
