@@ -6,4 +6,4 @@
 <?php get_template_part('template-parts/user', 'contatc'); //get-template-parts('foldername/slug', 'name')
 ?>
 
-<?php get_footer();?>
+<?php get_footer(); ?>

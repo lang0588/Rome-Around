@@ -245,7 +245,7 @@
 }
 
 .footer {
-    background-color: #080808;
+    background-color: #080808 !important;
     color: #FAF9F6;
     padding-top: 3rem;
     padding-bottom: 3rem;
