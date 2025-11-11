@@ -67,6 +67,14 @@
     padding-bottom: 3rem;
 }
 
+.testimonial-img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-left: 2rem;
+}
+
 
 /* Hotel cards setup (hotels page) */
 .hotels-grid .row {
