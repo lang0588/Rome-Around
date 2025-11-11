@@ -1,0 +1,480 @@
+/**
+ * Theme Name:        Rome travel Planner
+ * Description:       A classic theme for a lovely trip to Rome
+ * Version:           1.0.0
+ * Author:            Sara langis, Colin Seay, Davin Bujo
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+ /* ____HOME PAGE CSS____ */
+.hero-section{
+    text-align: center;
+}
+
+.hero-section h1{
+    color: #8E001C !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+ .home-grid h2{
+    color: #8E001C !important;
+    font-weight: 700;
+}
+
+.plan-section{
+    margin-left: 25px;
+}
+
+.home-grid h3{
+    padding-top: 55px;
+}
+
+.home-grid .card {
+    background-color: #FFE5B4 !important;
+    border-radius: 0 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.home-grid .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(8, 8, 8, 0.2);
+}
+
+.home-grid .card-title {
+    color: #8E001C;
+}
+
+.home-grid .btn-primary {
+    background-color: #8E001C;
+    border-color: #8E001C;
+    color: #FAF9F6;
+    font-weight: bold;
+    width: 25%;
+    border-radius: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-grid .btn-primary:hover {
+    background-color: #FFB300;
+    color: #080808;
+}
+
+.home-grid {
+    background-color: #FAF9F6;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+/* Hotel cards setup (hotels page) */
+.hotels-grid .row {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.hotels-grid .row > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin-bottom: 2rem !important;
+}
+
+.hotels-grid .card {
+  width: 100% !important;
+  border-radius: 0 !important;
+  border: none !important;
+  margin: 0 !important;
+}
+
+.hotels-grid .card-img-top {
+  width: 100% !important;
+  height: 300px !important;
+  object-fit: cover !important;
+}
+/* Hero banner overlay */
+.hero-banner {
+    background-color: rgba(8, 8, 8, 0.6); /* subtle overlay if using an image */
+    background-blend-mode: darken;
+    color: #FAF9F6;
+}
+
+/* Section titles */
+.hotels-grid h2 {
+    color: #8E001C;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Hotel cards */
+.hotels-grid .card {
+    background-color: #FFE5B4;
+    border: 2px solid #8E001C;
+    border-radius: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotels-grid .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(8, 8, 8, 0.2);
+}
+
+/* Card text */
+.hotels-grid .card-title {
+    color: #8E001C;
+}
+
+.hotels-grid .card-text {
+    color: #080808;
+}
+
+/* Rating stars */
+.hotel-rating {
+    color: #FFB300;
+    font-size: 1.2rem;
+}
+
+/* Book Now button */
+.hotels-grid .btn-primary {
+    background-color: #8E001C;
+    border-color: #8E001C;
+    color: #FAF9F6;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hotels-grid .btn-primary:hover {
+    background-color: #FFB300;
+    color: #080808;
+}
+
+/* Section spacing */
+.hotels-grid {
+    background-color: #FAF9F6;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* --- Events Page Styling --- */
+.events-grid h2 {
+    color: #8E001C;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.events-grid .card {
+    background-color: #FFE5B4 !important;
+    border-radius: 0 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.events-grid .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(8, 8, 8, 0.2);
+}
+
+.events-grid .card-title {
+    color: #8E001C;
+}
+
+.events-grid .btn-primary {
+    background-color: #8E001C;
+    border-color: #8E001C;
+    color: #FAF9F6;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.events-grid .btn-primary:hover {
+    background-color: #FFB300;
+    color: #080808;
+}
+
+.events-grid {
+    background-color: #FAF9F6;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+/* ____ATTRACTIONS PAGE CSS____ */
+
+.attractions-grid h2{
+    color: #8E001C;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.attractions-grid .card {
+    background-color: #FFE5B4 !important;
+    border-radius: 0 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.attractions-grid .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(8, 8, 8, 0.2);
+}
+
+.attractions-grid .card-title {
+    color: #8E001C;
+}
+
+.attractions-grid .btn-primary {
+    background-color: #8E001C;
+    border-color: #8E001C;
+    color: #FAF9F6;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.attractions-grid .btn-primary:hover {
+    background-color: #FFB300;
+    color: #080808;
+}
+
+.attractions-grid {
+    background-color: #FAF9F6;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+/* HERO BANNER HERE */
+#hero-banner {
+    
+    background-image: url('assets/images/landscape.webp'); 
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* adjust as needed */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FAF9F6; /* Baby Powder for text */
+}
+
+#hero-banner::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(8, 8, 8, 0.5); /* Black overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Hero Banner Text */
+#hero-banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFE5B4; 
+    margin-bottom: 0.5rem;
+}
+
+#hero-banner p {
+    font-size: 1.5rem;
+    color: #FFB300; 
+    margin-bottom: 1.5rem;
+}
+
+/* Hero Banner Button */
+#hero-banner .btn-primary {
+    background-color: #8E001C; 
+    border-color: #8E001C;
+    color: #FAF9F6; 
+    font-weight: bold;
+}
+
+#hero-banner .btn-primary:hover {
+    background-color: #FFB300; 
+    color: #080808; 
+    border-color: #FFB300;
+}
+.custom-navbar .nav-item{
+    margin: 0 1rem;
+}
+.custom-navbar {
+    background-color: #FFE5B4;
+    border-top: 4px solid #8E001C;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-top: -4px;
+    padding: 0.75rem 1rem;
+    position: relative;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.custom-navbar .navbar-brand {
+    color: #8E001C;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.custom-navbar .navbar-brand:hover {
+    color: #FFB300;
+}
+
+.custom-navbar .nav-link {
+    color: #080808;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-item.active .nav-link {
+    color: #8E001C;
+}
+
+.navbar-toggler {
+    border-color: #8E001C;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
+    xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%238E001C' stroke-width='2' 
+    stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+}
+
+.footer {
+    background-color: #080808; /* Black background */
+    color: #FAF9F6; /* Baby Powder text */
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer headings (column titles) */
+.footer-heading {
+    color: #8E001C; /* Carmine */
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+}
+
+/* Footer link list */
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links li a {
+    color: #FFB300; /* Selective Yellow */
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+    display: block;
+    padding: 0.1rem 0;
+}
+
+/* Hover effect for links */
+.footer-links li a:hover {
+    color: #FFE5B4; /* Peach hover */
+    transform: translateX(4px);
+}
+
+/* Divider line */
+.footer-divider {
+    border-top: 1px solid #8E001C; /* Carmine */
+    margin: 2.5rem 0;
+    opacity: 0.5;
+}
+
+/* Footer copyright */
+.footer p {
+    color: #FAF9F6;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+}
+
+/* Responsive behavior */
+@media (min-width: 768px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 180px; /* adjust based on number of links */
+    }
+
+    .footer-links li a {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .footer .row > div {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .footer-links li a {
+        text-align: center;
+    }
+}
+
+/* Optional: subtle shadow to separate from content above */
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), transparent);
+}
+
+/* Map Embed */
+/* Google Map container */
+.map-container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    height: 400px; 
+    overflow: hidden;
+    border: 3px solid #8E001C; /* Carmine border */
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.map-container:hover {
+    transform: scale(1.02); /* subtle hover effect */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .map-container {
+        height: 300px;
+    }
+}
+
+
+
