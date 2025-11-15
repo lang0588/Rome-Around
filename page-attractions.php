@@ -55,6 +55,36 @@ get_header();
 
   <?php endforeach; ?>
 
+
+  <!-- ____POST PHP____ -->
+<div class="main_post_container">
+  <?php 
+  $args = [
+    'post-type'=>'post',
+    'post-per-page' => -1
+  ];
+
+$query = new WP_Query($args);
+//WP Look
+if($query->have_posts()): 
+  while($query->have_posts()): $query->the_post();
+  ?>
+
+  <div class="post_card">
+    <h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
+    <h5><?php the_author();?></h5>
+    <p><?php the_excerpt();?></p>
+  </div>
+
+  <?php 
+    endwhile;
+else:
+?>
+<p>No posts to show!</p>
+<?php endif;?>
+</div>
+
+
   </div> 
 </section>
 
