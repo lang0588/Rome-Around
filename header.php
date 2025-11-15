@@ -38,6 +38,7 @@
             <li class="nav-item <?php if(is_page('hotels')) echo 'active'; ?>">
                 <a class="nav-link" href="<?php echo home_url('/hotels'); ?>">Hotels</a>
             </li>
+            <?php get_search_form(); ?>
         </ul>
     </div>
 </nav>

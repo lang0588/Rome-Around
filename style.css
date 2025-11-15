@@ -485,4 +485,80 @@
 }
 
 
+/* --- SEARCH RESULTS PAGE --- */
 
+/* Container */
+.search-results {
+    padding: 40px 20px;
+    background-color: #FAF9F6;
+}
+
+/* Page title */
+.search-results h1 {
+    color: #8E001C;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Results list */
+.search-results .results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Single result item */
+.search-results .search-item {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Post title */
+.search-results .post-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+/* Make the LINKS red */
+.search-results .post-title a {
+    color: red !important;
+    text-decoration: none;
+}
+
+.search-results .post-title a:hover {
+    color: darkred !important;
+}
+
+/* Meta text */
+.search-results .post-meta {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Excerpt */
+.search-results .post-excerpt {
+    font-size: 16px;
+    color: #080808;
+    margin-top: 10px;
+}
+
+/* Pagination styling */
+.search-results .pagination a {
+    color: #8E001C;
+    padding: 6px 12px;
+    border: 1px solid #8E001C;
+    margin: 0 4px;
+    text-decoration: none;
+}
+
+.search-results .pagination a:hover {
+    background-color: #8E001C;
+    color: white;
+}
+
+.search-results{
+    background-color: #6b1d1d !important;
+}

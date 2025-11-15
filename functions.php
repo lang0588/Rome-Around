@@ -1,15 +1,5 @@
 <?php 
-function rome_style(){
-    wp_enqueue_style(
-        'rome_primary_stylesheet', //slug
-        get_stylesheet_uri(), //gets the URL of the stylesheets
-        array(), //depedencies, none here
-        wp_get_theme()-> get('version'), //version, used for caches busting
-        'all' //media type
-    );
-}
-add_action('wp_enqueue_scripts', 'rome_style');
-// add_action('hookName', 'functionName')
+
 
 // function allowing bootstrap in css/js
 function loading_bootstrap(){
@@ -28,12 +18,23 @@ function loading_bootstrap(){
         true
     );
 }
- function load_theme_styles() {
-    wp_enqueue_style('main-styles', get_stylesheet_uri());
+function rome_style(){
+    wp_enqueue_style(
+        'rome_primary_stylesheet', //slug
+        get_stylesheet_uri(), //gets the URL of the stylesheets
+        array(), //depedencies, none here
+        wp_get_theme()-> get('version'), //version, used for caches busting
+        'all' //media type
+    );
 }
-    add_action('wp_enqueue_scripts', 'load_theme_styles');
+add_action('wp_enqueue_scripts', 'rome_style');
+// add_action('hookName', 'functionName')
+//  function load_theme_styles() {
+//     // wp_enqueue_style('main-styles', get_stylesheet_uri());
+// }
+//     add_action('wp_enqueue_scripts', 'load_theme_styles');
 
-?>
+// ?>
 
 
 
