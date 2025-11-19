@@ -2,12 +2,15 @@
  * Theme Name:        Rome travel Planner
  * Description:       A classic theme for a lovely trip to Rome
  * Version:           1.0.0
- * Author:            Sara langis, Colin Seay, Davin Bujo
+ * Author:            Sara Langis, Colin Seay, Davin Bujo
  * License:           GNU General Public License v2.0 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
 
- /* ____HOME PAGE CSS____ */
+/* ____HOME PAGE CSS____ */
+
+
+
 .hero-section{
     text-align: center;
 }
@@ -18,7 +21,7 @@
     text-transform: uppercase;
 }
 
- .home-grid h2{
+.home-grid h2{
     color: #8E001C !important;
     font-weight: 700;
 }
@@ -75,7 +78,6 @@
   margin-left: 2rem;
 }
 
-
 /* Hotel cards setup (hotels page) */
 .hotels-grid .row {
   display: block !important;
@@ -102,9 +104,10 @@
   height: 300px !important;
   object-fit: cover !important;
 }
+
 /* Hero banner overlay */
 .hero-banner {
-    background-color: rgba(8, 8, 8, 0.6); /* subtle overlay if using an image */
+    background-color: rgba(8, 8, 8, 0.6);
     background-blend-mode: darken;
     color: #FAF9F6;
 }
@@ -210,9 +213,7 @@
     padding-bottom: 3rem;
 }
 
-
 /* ____ATTRACTIONS PAGE CSS____ */
-
 .attractions-grid h2{
     color: #8E001C;
     font-weight: 700;
@@ -254,28 +255,26 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
-/* HERO BANNER HERE */
+
+/* ===== HERO BANNER ===== */
 #hero-banner {
-    
     background-image: url('assets/images/landscape.webp'); 
     background-size: cover;
     background-position: center;
-    height: 60vh; /* adjust as needed */
+    height: 60vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FAF9F6; /* Baby Powder for text */
+    color: #FAF9F6;
 }
 
 #hero-banner::before {
     content: "";
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-color: rgba(8, 8, 8, 0.5); /* Black overlay */
+    top:0; left:0;
+    width:100%; height:100%;
+    background-color: rgba(8,8,8,0.5);
 }
 
 .hero-content {
@@ -284,7 +283,6 @@
     text-align: center;
 }
 
-/* Hero Banner Text */
 #hero-banner h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -298,68 +296,127 @@
     margin-bottom: 1.5rem;
 }
 
-/* Hero Banner Button */
 #hero-banner .btn-primary {
-    background-color: #8E001C; 
+    background-color: #8E001C;
     border-color: #8E001C;
-    color: #FAF9F6; 
+    color: #FAF9F6;
     font-weight: bold;
 }
 
 #hero-banner .btn-primary:hover {
-    background-color: #FFB300; 
-    color: #080808; 
+    background-color: #FFB300;
+    color: #080808;
     border-color: #FFB300;
 }
-.custom-navbar .nav-item{
-    margin: 0 1rem;
-}
+
+
+/* ===== NAVBAR ===== */
 .custom-navbar {
-    background-color: #FFE5B4;
-    border-top: 4px solid #8E001C;
+    background-color: #FFE5B4 !important; /* Peach */
+    border-top: 4px solid #8E001C; /* Carmine */
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    margin-top: -4px;
-    padding: 0.75rem 1rem;
-    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
     z-index: 2;
-    transition: background-color 0.3s ease;
-    text-align: center;
 }
 
+/* Brand */
 .custom-navbar .navbar-brand {
     color: #8E001C;
     font-weight: bold;
     font-size: 1.5rem;
+    line-height: 80px;
 }
 
 .custom-navbar .navbar-brand:hover {
     color: #FFB300;
 }
 
+/* Links */
+.custom-navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
 .custom-navbar .nav-link {
     color: #080808;
     font-weight: 500;
-    transition: color 0.3s;
+    margin: 0 1.5rem;
+    line-height: 80px;
+    padding: 0;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .custom-navbar .nav-link:hover,
 .custom-navbar .nav-item.active .nav-link {
     color: #8E001C;
+    background-color: rgba(255, 179, 0, 0.1);
+    border-radius: 2px;
 }
 
+/* Search Form */
+.custom-navbar .navbar-search {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.custom-navbar .navbar-search input[type="search"] {
+    height: 40px;
+    border: 1px solid #8E001C;
+    border-radius: 4px 0 0 4px;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+}
+
+.custom-navbar .navbar-search button {
+    height: 40px;
+    border: 1px solid #8E001C;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #8E001C;
+    color: #FAF9F6;
+    padding: 0 0.75rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.custom-navbar .navbar-search button:hover {
+    background-color: #FFB300;
+    color: #080808;
+}
+
+/* Toggler */
 .navbar-toggler {
     border-color: #8E001C;
+    height: 40px;
+    width: 45px;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
-    xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%238E001C' stroke-width='2' 
-    stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%238E001C' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/* Responsive */
+@media (max-width: 991.98px) {
+    .custom-navbar .navbar-nav {
+        flex-direction: column;
+    }
+    .custom-navbar .navbar-search {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+/* ===== FOOTER ===== */
 .footer {
-    background-color: #080808; /* Black background */
-    color: #FAF9F6; /* Baby Powder text */
+    background-color: #FFE5B4; /* Peach background */
+    color: #050505; /* Darker text for better readability */
     padding-top: 4rem;
     padding-bottom: 2rem;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -369,7 +426,7 @@
 
 /* Footer headings (column titles) */
 .footer-heading {
-    color: #8E001C; /* Carmine */
+    color: #8E001C; /* Carmine for headings */
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
@@ -389,48 +446,34 @@
 }
 
 .footer-links li a {
-    color: #FFB300; /* Selective Yellow */
+    color: #FFB300; /* Yellow highlights */
     text-decoration: none;
     transition: color 0.3s, transform 0.2s;
     display: block;
     padding: 0.1rem 0;
 }
 
-/* Hover effect for links */
 .footer-links li a:hover {
-    color: #FFE5B4; /* Peach hover */
+    color: #8E001C; /* Carmine hover */
     transform: translateX(4px);
 }
 
 /* Divider line */
 .footer-divider {
-    border-top: 1px solid #8E001C; /* Carmine */
+    border-top: 1px solid #8E001C; /* Carmine line */
     margin: 2.5rem 0;
     opacity: 0.5;
 }
 
 /* Footer copyright */
 .footer p {
-    color: #FAF9F6;
+    color: #050505; /* Dark text */
     margin-bottom: 0;
     font-size: 0.9rem;
     letter-spacing: 0.02em;
 }
 
-/* Responsive behavior */
-@media (min-width: 768px) {
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 180px; /* adjust based on number of links */
-    }
-
-    .footer-links li a {
-        text-align: left;
-    }
-}
-
+/* Responsive */
 @media (max-width: 767.98px) {
     .footer .row > div {
         text-align: center;
@@ -450,25 +493,25 @@
     left: 0;
     width: 100%;
     height: 8px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4), transparent);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), transparent);
 }
 
-/* Map Embed */
-/* Google Map container */
+
+/* ==== MAP STYLES ==== */
 .map-container {
     width: 100%;
     max-width: 1200px; 
     margin: 0 auto; 
     height: 400px; 
     overflow: hidden;
-    border: 3px solid #8E001C; /* Carmine border */
+    border: 3px solid #8E001C;
     border-radius: 0.25rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
 .map-container:hover {
-    transform: scale(1.02); /* subtle hover effect */
+    transform: scale(1.02);
 }
 
 .map-container iframe {
@@ -477,88 +520,80 @@
     border: 0;
 }
 
-/* Responsive adjustment */
 @media (max-width: 768px) {
     .map-container {
         height: 300px;
     }
 }
 
-
-/* --- SEARCH RESULTS PAGE --- */
-
-/* Container */
+/* ==== SEARCH RESULTS PAGE ==== */
+/* ===== SEARCH RESULTS PAGE ===== */
 .search-results {
     padding: 40px 20px;
-    background-color: #FAF9F6;
+    background-color: #FFF7F0; /* Off-white with peach tint */
+    color: #080808; /* Dark text */
+    min-height: 60vh;
 }
 
-/* Page title */
 .search-results h1 {
-    color: #8E001C;
+    color: #8E001C; /* Carmine */
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 30px;
     text-align: center;
 }
 
-/* Results list */
-.search-results .results-list {
+.results-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Single result item */
-.search-results .search-item {
+.search-item {
     padding-bottom: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #8E001C; /* Carmine divider */
 }
 
-/* Post title */
-.search-results .post-title {
-    font-size: 22px;
-    margin-bottom: 8px;
-}
-
-/* Make the LINKS red */
-.search-results .post-title a {
-    color: red !important;
+.post-title a {
+    color: #8E001C; /* Carmine for post title links */
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.search-results .post-title a:hover {
-    color: darkred !important;
+.post-title a:hover {
+    color: #FFB300; /* Yellow on hover */
 }
 
-/* Meta text */
-.search-results .post-meta {
+.post-meta {
     font-size: 14px;
-    color: #555;
+    color: #080808; /* Dark text for meta */
 }
 
-/* Excerpt */
-.search-results .post-excerpt {
+.post-excerpt {
     font-size: 16px;
     color: #080808;
     margin-top: 10px;
 }
 
-/* Pagination styling */
-.search-results .pagination a {
-    color: #8E001C;
+/* Pagination */
+.pagination a {
+    color: #8E001C; /* Carmine */
     padding: 6px 12px;
     border: 1px solid #8E001C;
     margin: 0 4px;
     text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.search-results .pagination a:hover {
+.pagination a:hover {
+    background-color: #FFB300; /* Yellow hover */
+    color: #080808;
+}
+
+.pagination .current {
     background-color: #8E001C;
-    color: white;
+    color: #FAF9F6;
+    border-color: #8E001C;
 }
 
-.search-results{
-    background-color: #6b1d1d !important;
-}

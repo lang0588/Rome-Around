@@ -27,6 +27,12 @@ function rome_style(){
         'all' //media type
     );
 }
+function mytheme_register_menus() {
+    register_nav_menus(array(
+        'primary' => __('Primary Menu', 'mytheme'),
+    ));
+}
+add_action('after_setup_theme', 'mytheme_register_menus');
 add_action('wp_enqueue_scripts', 'rome_style');
 // add_action('hookName', 'functionName')
 //  function load_theme_styles() {
