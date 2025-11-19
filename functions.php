@@ -18,6 +18,23 @@ function loading_bootstrap(){
         true
     );
 }
+// below is our google fonts
+function rome_travel_fonts() {
+    // Preconnect for performance
+    echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+    
+    // Google Font: Lora
+    wp_enqueue_style(
+        'rome-travel-lora', 
+        'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap', 
+        array(), 
+        null
+    );
+}
+add_action('wp_head', 'rome_travel_fonts');
+
+// our theme stylesheet
 function rome_style(){
     wp_enqueue_style(
         'rome_primary_stylesheet', //slug
@@ -34,13 +51,16 @@ function mytheme_register_menus() {
 }
 add_action('after_setup_theme', 'mytheme_register_menus');
 add_action('wp_enqueue_scripts', 'rome_style');
-// add_action('hookName', 'functionName')
-//  function load_theme_styles() {
-//     // wp_enqueue_style('main-styles', get_stylesheet_uri());
-// }
-//     add_action('wp_enqueue_scripts', 'load_theme_styles');
 
-// ?>
+// 
+function rome_travel_menus() {
+
+    // Footer Menus
+    register_nav_menu('footer-menu-1', __('Footer Menu 1', 'rome-travel'));
+    register_nav_menu('footer-menu-2', __('Footer Menu 2', 'rome-travel'));
+    register_nav_menu('footer-menu-3', __('Footer Menu 3', 'rome-travel'));
+}
+add_action('after_setup_theme', 'rome_travel_menus');
 
 
 

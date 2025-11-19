@@ -1,73 +1,47 @@
-
-<?php wp_footer();?>
-<?php
-$footer_links_about = [
-    ['title' => 'Home', 'url' => home_url()],
-    ['title' => 'Attractions', 'url' => home_url('/attractions')],
-    ['title' => 'Events', 'url' => home_url('/events')],
-    ['title' => 'Hotels', 'url' => home_url('/hotels')]
-];
-
-$footer_links_quick = [
-    ['title' => 'Rome Tours', 'url' => home_url('/tours')],
-    ['title' => 'Travel Tips', 'url' => home_url('/tips')],
-    ['title' => 'Blog', 'url' => home_url('/blog')],
-    ['title' => 'FAQ', 'url' => home_url('/faq')]
-];
-
-$footer_links_contact = [
-    ['title' => 'Contact Us', 'url' => home_url('/contact')],
-    ['title' => 'Support', 'url' => home_url('/support')],
-    ['title' => 'Privacy Policy', 'url' => home_url('/privacy')],
-    ['title' => 'Terms & Conditions', 'url' => home_url('/terms')]
-];
-?>
-
-<footer class="footer py-5">
+<footer class="footer">
     <div class="container">
-        <div class="row text-center text-md-left">
-
-            <div class="col-md-4 mb-4">
-                <h5 class="footer-heading">About</h5>
-                <ul class="footer-links list-unstyled">
-                    <?php foreach($footer_links_about as $link): ?>
-                        <li><a href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a></li>
-                    <?php endforeach; ?>
-                </ul>
+        <div class="row justify-content-center text-center">
+            <!-- Footer Column 1 -->
+            <div class="col-md-4 mb-3">
+                <h4 class="footer-heading">Menu 1</h4>
+                <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'footer-menu-1',
+                        'container' => false,
+                        'menu_class' => 'footer-links',
+                        'fallback_cb' => false
+                    ));
+                ?>
             </div>
 
-            <div class="col-md-4 mb-4">
-                <h5 class="footer-heading">Quick Links</h5>
-                <ul class="footer-links list-unstyled">
-                    <?php foreach($footer_links_quick as $link): ?>
-                        <li><a href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a></li>
-                    <?php endforeach; ?>
-                </ul>
+            <!-- Footer Column 2 -->
+            <div class="col-md-4 mb-3">
+                <h4 class="footer-heading">Menu 2</h4>
+                <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'footer-menu-2',
+                        'container' => false,
+                        'menu_class' => 'footer-links',
+                        'fallback_cb' => false
+                    ));
+                ?>
             </div>
 
-            <div class="col-md-4 mb-4">
-                <h5 class="footer-heading">Contact</h5>
-                <ul class="footer-links list-unstyled">
-                    <?php foreach($footer_links_contact as $link): ?>
-                        <li><a href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a></li>
-                    <?php endforeach; ?>
-                </ul>
+            <!-- Footer Column 3 -->
+            <div class="col-md-4 mb-3">
+                <h4 class="footer-heading">Menu 3</h4>
+                <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'footer-menu-3',
+                        'container' => false,
+                        'menu_class' => 'footer-links',
+                        'fallback_cb' => false
+                    ));
+                ?>
             </div>
-
         </div>
 
-        <hr class="footer-divider">
-
-        <div class="row">
-            <div class="col-12 text-center">
-                <p class="mb-0">&copy; <?php echo date('Y'); ?> Rome Travel Planner. All rights reserved.</p>
-            </div>
-        </div>
+        <div class="footer-divider"></div>
+        <p>&copy; <?php echo date('Y'); ?> Rome Travel Planner. All rights reserved.</p>
     </div>
 </footer>
-
-<?php wp_footer(); ?>
-
-
-</body>
-</html>

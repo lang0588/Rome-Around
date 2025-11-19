@@ -7,9 +7,12 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
 
+ 
+
 /* ____HOME PAGE CSS____ */
-
-
+body {
+    font-family: 'Lora', serif;
+}
 
 .hero-section{
     text-align: center;
@@ -415,30 +418,25 @@
 }
 /* ===== FOOTER ===== */
 .footer {
-    background-color: #FFE5B4; /* Peach background */
-    color: #050505; /* Darker text for better readability */
-    padding-top: 4rem;
+    background-color: #FFE5B4; /* same as navbar for consistency */
+    color: #080808; /* darker text for readability */
+    padding-top: 3rem;
     padding-bottom: 2rem;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    position: relative;
-    z-index: 2;
+    text-align: center;
 }
 
-/* Footer headings (column titles) */
 .footer-heading {
-    color: #8E001C; /* Carmine for headings */
+    color: #8E001C;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
 }
 
-/* Footer link list */
 .footer-links {
     list-style: none;
     padding-left: 0;
-    margin: 0;
+    margin: 0 auto;
+    display: inline-block; /* center the list inside the column */
 }
 
 .footer-links li {
@@ -446,54 +444,25 @@
 }
 
 .footer-links li a {
-    color: #FFB300; /* Yellow highlights */
+    color: #080808;
     text-decoration: none;
-    transition: color 0.3s, transform 0.2s;
-    display: block;
-    padding: 0.1rem 0;
+    transition: color 0.3s ease;
 }
 
 .footer-links li a:hover {
-    color: #8E001C; /* Carmine hover */
-    transform: translateX(4px);
+    color: #8E001C;
 }
 
-/* Divider line */
 .footer-divider {
-    border-top: 1px solid #8E001C; /* Carmine line */
-    margin: 2.5rem 0;
+    border-top: 1px solid #8E001C;
+    margin: 2rem 0;
     opacity: 0.5;
 }
 
-/* Footer copyright */
 .footer p {
-    color: #050505; /* Dark text */
     margin-bottom: 0;
     font-size: 0.9rem;
-    letter-spacing: 0.02em;
-}
-
-/* Responsive */
-@media (max-width: 767.98px) {
-    .footer .row > div {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .footer-links li a {
-        text-align: center;
-    }
-}
-
-/* Optional: subtle shadow to separate from content above */
-.footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2), transparent);
+    color: #080808;
 }
 
 
@@ -526,7 +495,6 @@
     }
 }
 
-/* ==== SEARCH RESULTS PAGE ==== */
 /* ===== SEARCH RESULTS PAGE ===== */
 .search-results {
     padding: 40px 20px;
