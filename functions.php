@@ -64,6 +64,18 @@ add_action('after_setup_theme', 'rome_travel_menus');
 
 
 
+function registering_sidebars(){
+    register_sidebar(array(
+        'id' => 'my_sidebar',
+        'name' => 'New Sidebar',
+        'description' => 'This is my first sidebar',
+        'before_widget' => '<div id="%1$s" class="widget-%1$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    )); //repeat as many sidebars as you need
+}
+add_action('widgets_init', 'registering_sidebars');
 
 
 
