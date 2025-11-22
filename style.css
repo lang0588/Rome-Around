@@ -436,7 +436,8 @@ body {
     list-style: none;
     padding-left: 0;
     margin: 0 auto;
-    display: inline-block; /* center the list inside the column */
+    display: inline-block; 
+    /* center the list inside the column */
 }
 
 .footer-links li {

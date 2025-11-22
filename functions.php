@@ -78,6 +78,13 @@ function registering_sidebars(){
 add_action('widgets_init', 'registering_sidebars');
 
 
+function mytheme_enqueue_assets() {
+    wp_enqueue_style(
+        'bootstrap-icons',
+        'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css'
+    );
+}
+add_action('wp_enqueue_scripts', 'mytheme_enqueue_assets');
 
 
 
