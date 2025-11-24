@@ -32,7 +32,6 @@ function loading_bootstrap(){
     wp_enqueue_style('main-styles', get_stylesheet_uri());
 }
     add_action('wp_enqueue_scripts', 'load_theme_styles');
-
 ?>
 
 
