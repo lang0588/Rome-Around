@@ -87,6 +87,21 @@ function mytheme_enqueue_assets() {
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_assets');
 
+// Header widget area
+function rome_register_header_widget() {
+    register_sidebar(array(
+        'name'          => 'Header',
+        'id'            => 'header-widget',
+        'description'   => 'This widget displays above the entire header area.',
+        'before_widget' => '<div class="header-widget-area">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="header-widget-title">',
+        'after_title'   => '</h3>',
+    ));
+}
+add_action('widgets_init', 'rome_register_header_widget');
+
+
 
 
 

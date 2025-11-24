@@ -566,3 +566,23 @@ body {
     border-color: #8E001C;
 }
 
+/* Header widget area */
+.header-widget-container {
+    width: 100%;
+    background-color: #FFE5B4;
+    border-bottom: 3px solid #8E001C;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.header-widget-area {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-widget-title {
+    color: #8E001C;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}

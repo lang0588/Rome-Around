@@ -13,6 +13,13 @@
 </head>
 <body <?php body_class(); ?>>
 
+<?php if (is_active_sidebar('header-widget')) : ?>
+    <div class="header-widget-container">
+        <?php dynamic_sidebar('header-widget'); ?>
+    </div>
+<?php endif; ?>
+
+
 <!-- Hero Banner -->
 <header id="hero-banner" class="text-center text-white d-flex align-items-center justify-content-center">
     <div class="hero-content">
