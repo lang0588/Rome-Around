@@ -2,12 +2,18 @@
  * Theme Name:        Rome travel Planner
  * Description:       A classic theme for a lovely trip to Rome
  * Version:           1.0.0
- * Author:            Sara langis, Colin Seay, Davin Bujo
+ * Author:            Sara Langis, Colin Seay, Davin Bujo
  * License:           GNU General Public License v2.0 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
 
- /* ____HOME PAGE CSS____ */
+ 
+
+/* ____HOME PAGE CSS____ */
+body {
+    font-family: 'Lora', serif;
+}
+
 .hero-section{
     text-align: center;
 }
@@ -18,7 +24,7 @@
     text-transform: uppercase;
 }
 
- .home-grid h2{
+.home-grid h2{
     color: #8E001C !important;
     font-weight: 700;
 }
@@ -67,6 +73,13 @@
     padding-bottom: 3rem;
 }
 
+.testimonial-img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-left: 2rem;
+}
 
 /* Hotel cards setup (hotels page) */
 .hotels-grid .row {
@@ -94,9 +107,10 @@
   height: 300px !important;
   object-fit: cover !important;
 }
+
 /* Hero banner overlay */
 .hero-banner {
-    background-color: rgba(8, 8, 8, 0.6); /* subtle overlay if using an image */
+    background-color: rgba(8, 8, 8, 0.6);
     background-blend-mode: darken;
     color: #FAF9F6;
 }
@@ -202,9 +216,7 @@
     padding-bottom: 3rem;
 }
 
-
 /* ____ATTRACTIONS PAGE CSS____ */
-
 .attractions-grid h2{
     color: #8E001C;
     font-weight: 700;
@@ -246,28 +258,26 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
-/* HERO BANNER HERE */
+
+/* ===== HERO BANNER ===== */
 #hero-banner {
-    
     background-image: url('assets/images/landscape.webp'); 
     background-size: cover;
     background-position: center;
-    height: 60vh; /* adjust as needed */
+    height: 60vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FAF9F6; /* Baby Powder for text */
+    color: #FAF9F6;
 }
 
 #hero-banner::before {
     content: "";
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-color: rgba(8, 8, 8, 0.5); /* Black overlay */
+    top:0; left:0;
+    width:100%; height:100%;
+    background-color: rgba(8,8,8,0.5);
 }
 
 .hero-content {
@@ -276,7 +286,6 @@
     text-align: center;
 }
 
-/* Hero Banner Text */
 #hero-banner h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -290,90 +299,145 @@
     margin-bottom: 1.5rem;
 }
 
-/* Hero Banner Button */
 #hero-banner .btn-primary {
-    background-color: #8E001C; 
+    background-color: #8E001C;
     border-color: #8E001C;
-    color: #FAF9F6; 
+    color: #FAF9F6;
     font-weight: bold;
 }
 
 #hero-banner .btn-primary:hover {
-    background-color: #FFB300; 
-    color: #080808; 
+    background-color: #FFB300;
+    color: #080808;
     border-color: #FFB300;
 }
-.custom-navbar .nav-item{
-    margin: 0 1rem;
-}
+
+
+/* ===== NAVBAR ===== */
 .custom-navbar {
-    background-color: #FFE5B4;
-    border-top: 4px solid #8E001C;
+    background-color: #FFE5B4 !important; /* Peach */
+    border-top: 4px solid #8E001C; /* Carmine */
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    margin-top: -4px;
-    padding: 0.75rem 1rem;
-    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
     z-index: 2;
-    transition: background-color 0.3s ease;
-    text-align: center;
 }
 
+/* Brand */
 .custom-navbar .navbar-brand {
     color: #8E001C;
     font-weight: bold;
     font-size: 1.5rem;
+    line-height: 80px;
 }
 
 .custom-navbar .navbar-brand:hover {
     color: #FFB300;
 }
 
+/* Links */
+.custom-navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
 .custom-navbar .nav-link {
     color: #080808;
     font-weight: 500;
-    transition: color 0.3s;
+    margin: 0 1.5rem;
+    line-height: 80px;
+    padding: 0;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .custom-navbar .nav-link:hover,
 .custom-navbar .nav-item.active .nav-link {
     color: #8E001C;
+    background-color: rgba(255, 179, 0, 0.1);
+    border-radius: 2px;
 }
 
+/* Search Form */
+.custom-navbar .navbar-search {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.custom-navbar .navbar-search input[type="search"] {
+    height: 40px;
+    border: 1px solid #8E001C;
+    border-radius: 4px 0 0 4px;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+}
+
+.custom-navbar .navbar-search button {
+    height: 40px;
+    border: 1px solid #8E001C;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #8E001C;
+    color: #FAF9F6;
+    padding: 0 0.75rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.custom-navbar .navbar-search button:hover {
+    background-color: #FFB300;
+    color: #080808;
+}
+
+/* Toggler */
 .navbar-toggler {
     border-color: #8E001C;
+    height: 40px;
+    width: 45px;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
-    xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%238E001C' stroke-width='2' 
-    stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%238E001C' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/* Responsive */
+@media (max-width: 991.98px) {
+    .custom-navbar .navbar-nav {
+        flex-direction: column;
+    }
+    .custom-navbar .navbar-search {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+/* ===== FOOTER ===== */
 .footer {
-    background-color: #080808; /* Black background */
-    color: #FAF9F6; /* Baby Powder text */
-    padding-top: 4rem;
+    background-color: #FFE5B4; /* same as navbar for consistency */
+    color: #080808; /* darker text for readability */
+    padding-top: 3rem;
     padding-bottom: 2rem;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    position: relative;
-    z-index: 2;
+    text-align: center;
 }
 
-/* Footer headings (column titles) */
 .footer-heading {
-    color: #8E001C; /* Carmine */
+    color: #8E001C;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
 }
 
-/* Footer link list */
 .footer-links {
     list-style: none;
     padding-left: 0;
-    margin: 0;
+    margin: 0 auto;
+    display: inline-block; 
+    /* center the list inside the column */
 }
 
 .footer-links li {
@@ -381,86 +445,43 @@
 }
 
 .footer-links li a {
-    color: #FFB300; /* Selective Yellow */
+    color: #080808;
     text-decoration: none;
-    transition: color 0.3s, transform 0.2s;
-    display: block;
-    padding: 0.1rem 0;
+    transition: color 0.3s ease;
 }
 
-/* Hover effect for links */
 .footer-links li a:hover {
-    color: #FFE5B4; /* Peach hover */
-    transform: translateX(4px);
+    color: #8E001C;
 }
 
-/* Divider line */
 .footer-divider {
-    border-top: 1px solid #8E001C; /* Carmine */
-    margin: 2.5rem 0;
+    border-top: 1px solid #8E001C;
+    margin: 2rem 0;
     opacity: 0.5;
 }
 
-/* Footer copyright */
 .footer p {
-    color: #FAF9F6;
     margin-bottom: 0;
     font-size: 0.9rem;
-    letter-spacing: 0.02em;
+    color: #080808;
 }
 
-/* Responsive behavior */
-@media (min-width: 768px) {
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 180px; /* adjust based on number of links */
-    }
 
-    .footer-links li a {
-        text-align: left;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .footer .row > div {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .footer-links li a {
-        text-align: center;
-    }
-}
-
-/* Optional: subtle shadow to separate from content above */
-.footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4), transparent);
-}
-
-/* Map Embed */
-/* Google Map container */
+/* ==== MAP STYLES ==== */
 .map-container {
     width: 100%;
     max-width: 1200px; 
     margin: 0 auto; 
     height: 400px; 
     overflow: hidden;
-    border: 3px solid #8E001C; /* Carmine border */
+    border: 3px solid #8E001C;
     border-radius: 0.25rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
 .map-container:hover {
-    transform: scale(1.02); /* subtle hover effect */
+    transform: scale(1.02);
 }
 
 .map-container iframe {
@@ -469,12 +490,79 @@
     border: 0;
 }
 
-/* Responsive adjustment */
 @media (max-width: 768px) {
     .map-container {
         height: 300px;
     }
 }
 
+/* ===== SEARCH RESULTS PAGE ===== */
+.search-results {
+    padding: 40px 20px;
+    background-color: #FFF7F0; /* Off-white with peach tint */
+    color: #080808; /* Dark text */
+    min-height: 60vh;
+}
 
+.search-results h1 {
+    color: #8E001C; /* Carmine */
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-item {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #8E001C; /* Carmine divider */
+}
+
+.post-title a {
+    color: #8E001C; /* Carmine for post title links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-title a:hover {
+    color: #FFB300; /* Yellow on hover */
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #080808; /* Dark text for meta */
+}
+
+.post-excerpt {
+    font-size: 16px;
+    color: #080808;
+    margin-top: 10px;
+}
+
+/* Pagination */
+.pagination a {
+    color: #8E001C; /* Carmine */
+    padding: 6px 12px;
+    border: 1px solid #8E001C;
+    margin: 0 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #FFB300; /* Yellow hover */
+    color: #080808;
+}
+
+.pagination .current {
+    background-color: #8E001C;
+    color: #FAF9F6;
+    border-color: #8E001C;
+}
 
