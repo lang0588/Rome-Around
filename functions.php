@@ -32,16 +32,8 @@ function rome_travel_fonts() {
         null
     );
 }
-<<<<<<< HEAD
-    add_action('wp_enqueue_scripts', 'load_theme_styles');
-?>
 
-
-
-
-=======
 add_action('wp_head', 'rome_travel_fonts');
->>>>>>> 9ac3dc9e8757b7700a4e4a14b41f2e84c4ba0a70
 
 // our theme stylesheet
 function rome_style(){
