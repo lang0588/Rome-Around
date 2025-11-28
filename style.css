@@ -586,3 +586,25 @@ body {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
+
+/* Footer widget area */
+.footer-widget-container {
+    width: 100%;
+    background-color: #FFE5B4;
+    border-top: 3px solid #8E001C;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.footer-widget-area {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-widget-title {
+    color: #8E001C;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+

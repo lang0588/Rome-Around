@@ -50,6 +50,14 @@
          
     </div>
 
+    <!-- Allowing footer widget to diplay -->
+    <?php if ( is_active_sidebar( 'footer-widget' ) ) : ?>
+        <div class="custom-footer-widgets">
+            <?php dynamic_sidebar( 'footer-widget' ); ?>
+        </div>
+    <?php endif; ?>
+
+
     <!-- MENU -->
     <div>
         <?php

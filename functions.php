@@ -102,6 +102,23 @@ function rome_register_header_widget() {
 add_action('widgets_init', 'rome_register_header_widget');
 
 
+// Footer widget area
+function register_footer_widget() {
+    register_sidebar(array(
+        'name'          => 'Footer',
+        'id'            => 'footer-widget',
+        'description'   => 'widget that displays above the existing footer area.',
+        'before_widget' => '<div class="footer-widget-area">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="footer-widget-title">',
+        'after_title'   => '</h3>',
+    ));
+}
+add_action('widgets_init', 'register_footer_widget');
+
+
+
+
 
 
 
