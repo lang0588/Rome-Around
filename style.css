@@ -588,17 +588,14 @@ body {
 }
 
 /* Footer widget area */
-.footer-widget-container {
+.footer-widget-area {
     width: 100%;
-    background-color: #FFE5B4;
-    border-top: 3px solid #8E001C;
+    background-color: #FFE5B4; 
+    border-top: 3px solid #8E001C; 
     padding: 10px 20px;
     text-align: center;
-}
-
-.footer-widget-area {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
 .footer-widget-title {
@@ -607,4 +604,5 @@ body {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
+
 
