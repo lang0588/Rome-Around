@@ -1,3 +1,11 @@
+
+<!-- Allowing footer widget to diplay -->
+<?php if ( is_active_sidebar( 'footer-widget' ) ) : ?>
+        <div class="custom-footer-widgets">
+            <?php dynamic_sidebar( 'footer-widget' ); ?>
+        </div>
+    <?php endif; ?>
+
 <footer class="footer">
     <div class="container">
         <?php get_sidebar(); ?>
@@ -49,13 +57,6 @@
         <p>&copy; <?php echo date('Y'); ?> Rome Travel Planner. All rights reserved.</p>
          
     </div>
-
-    <!-- Allowing footer widget to diplay -->
-    <?php if ( is_active_sidebar( 'footer-widget' ) ) : ?>
-        <div class="custom-footer-widgets">
-            <?php dynamic_sidebar( 'footer-widget' ); ?>
-        </div>
-    <?php endif; ?>
 
 
     <!-- MENU -->
