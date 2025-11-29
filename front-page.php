@@ -1,6 +1,13 @@
 <?php get_header();?>
 
 <section class="hero-section container py-5">
+  <div>
+    <?php echo do_shortcode('[contact_shortcode class="primary-button"]'); ?>
+    <?php echo do_shortcode('[contact_shortcode class="secondary-button" button_label="Get in touch!"]'); ?>
+    <?php echo do_shortcode('[contact_shortcode class="new-button" button_label="Get lucky" link="youtube.com"]'); ?>
+
+
+</div>
     <div>
         <h1>Welcome to Your Ultimate Rome Travel Guide</h1>
         <p>Step into the heart of Italy’s Eternal City — where ancient history, world-class cuisine, and vibrant street life meet. Whether you’re planning your first visit or returning for another taste of la dolce vita, our guide helps you explore Rome with confidence and curiosity.</p>

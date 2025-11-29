@@ -118,7 +118,24 @@ add_action('widgets_init', 'register_footer_widget');
 
 
 
+function contact_us($atts, $content){
+    $name_atts = shortcode_atts(
+        array(
+            'link' => 'ww.thisisawebsite.com',
+            'button_label' => 'Contact us',
+            'class' => ''
+        ),
+        $atts,
+        'contact_shortcode'
+    );
 
+
+    $content = '<a target="_blank" href="'.$name_atts['link'].'" class="'.$name_atts['class'].'">'.$name_atts['button_label'].'</a>';//conatins what should be outputted once the shortcode is called
+
+
+    return $content;
+}
+add_shortcode('contact_shortcode', 'contact_us');//('shortcode tag', 'function with the definition of the shortcode')
 
 
 
