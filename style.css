@@ -10,6 +10,7 @@
  
 
 /* ____HOME PAGE CSS____ */
+
 body {
     font-family: 'Lora', serif;
 }
@@ -708,4 +709,10 @@ body {
    background-color: #FFB300;
     color: #080808;
     text-decoration: none;
+}
+
+.header-phone {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
 }

@@ -26,8 +26,18 @@
         <h1>Welcome to Our Site</h1>
         <p>Discover attractions, events, and hotels!</p>
         <a href="<?php echo home_url('/attractions'); ?>" class="btn btn-primary btn-lg">Explore Now</a>
+    
+        <!-- tel number -->
+<?php
+$phone = get_option('mytheme_phone_number');
+
+if (!empty($phone)) {
+    echo '<div class="header-phone">Call us: ' . esc_html($phone) . '</div>';
+}
+?>
     </div>
 </header>
+
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg custom-navbar" role="navigation">

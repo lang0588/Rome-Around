@@ -138,5 +138,54 @@ function contact_us($atts, $content){
 add_shortcode('contact_shortcode', 'contact_us');//('shortcode tag', 'function with the definition of the shortcode')
 
 
+// custom settings page
+
+function mytheme_add_settings_page() {
+    add_menu_page(
+        'Theme Settings',          
+        'Theme Settings',          
+        'manage_options',          
+        'mytheme-settings',        
+        'dashicons-admin-generic', 
+        61                         
+    );
+}
+add_action('admin_menu', 'mytheme_add_settings_page');
+
+
+// register settings
+
+function mytheme_register_settings() {
+    register_setting('mytheme_settings_group', 'mytheme_phone_number');
+}
+add_action('admin_init', 'mytheme_register_settings');
+
+
+//settings page html
+
+function mytheme_settings_page() { ?>
+    <div class="wrap">
+        <h1>Theme Settings</h1>
+
+        <form method="post" action="options.php">
+            <?php settings_fields('mytheme_settings_group'); ?>
+            <?php do_settings_sections('mytheme_settings_group'); ?>
+
+            <table class="form-table">
+                <tr valign="top">
+                    <th scope="row">Header Telephone Number</th>
+                    <td>
+                        <input type="text" 
+                               name="mytheme_phone_number" 
+                               value="<?php echo esc_attr(get_option('mytheme_phone_number')); ?>" 
+                               style="width:300px;" />
+                    </td>
+                </tr>
+            </table>
+
+            <?php submit_button(); ?>
+        </form>
+    </div>
+<?php }
 
 
