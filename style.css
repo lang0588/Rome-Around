@@ -720,18 +720,54 @@ body {
 /* shortcode styling */
 
 /* setting base button style (for all shortcodes) */
-.primary-button a,
-.secondary-button a,
-.new-button a {
+a.primary-button,
+a.secondary-button,
+a.new-button {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 12px 26px;
     margin: 10px;
     font-family: 'Lora', serif;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 0;
+    border: 2px solid transparent;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-    border-width: 2px;
-    border-style: solid;
+}
+/* primary button style */
+a.primary-button {
+    background-color: #8E001C;
+    color: #FAF9F6;
+    border-color: #8E001C;
+}
+
+a.primary-button:hover {
+    background-color: #FFB300;
+    color: #080808;
+    border-color: #FFB300;
+}
+
+/* secondary button style */
+a.secondary-button {
+    background-color: #8E001C;
+    color: #FAF9F6;
+    border-color: #8E001C;
+}
+
+a.secondary-button:hover {
+    background-color: #FFB300;
+    color: #080808;
+    border-color: #FFB300;
+}
+
+a.new-button {
+    background-color: #8E001C;
+    color: #FAF9F6;
+    border-color: #8E001C;
+}
+
+a.new-button:hover {
+    background-color: #FFB300;
+    color: #080808;
+    border-color: #FFB300;
 }
