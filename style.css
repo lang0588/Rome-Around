@@ -716,3 +716,22 @@ body {
     font-weight: bold;
     margin-top: 10px;
 }
+
+/* shortcode styling */
+
+/* setting base button style (for all shortcodes) */
+.primary-button a,
+.secondary-button a,
+.new-button a {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    border-width: 2px;
+    border-style: solid;
+}
