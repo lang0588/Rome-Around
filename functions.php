@@ -142,15 +142,17 @@ add_shortcode('contact_shortcode', 'contact_us');//('shortcode tag', 'function w
 
 function mytheme_add_settings_page() {
     add_menu_page(
-        'Theme Settings',          
-        'Theme Settings',          
-        'manage_options',          
-        'mytheme-settings',        
-        'dashicons-admin-generic', 
-        61                         
+        'Theme Settings',            // Page title
+        'Theme Settings',            // Menu title
+        'manage_options',            // Capability
+        'mytheme-settings',          // Menu slug
+        'mytheme_settings_page',     // CALLBACK FUNCTION
+        'dashicons-admin-generic',   // Icon
+        61                           // Position
     );
 }
 add_action('admin_menu', 'mytheme_add_settings_page');
+
 
 
 // register settings
@@ -176,9 +178,9 @@ function mytheme_settings_page() { ?>
                     <th scope="row">Header Telephone Number</th>
                     <td>
                         <input type="text" 
-                               name="mytheme_phone_number" 
-                               value="<?php echo esc_attr(get_option('mytheme_phone_number')); ?>" 
-                               style="width:300px;" />
+                            name="mytheme_phone_number" 
+                            value="<?php echo esc_attr(get_option('mytheme_phone_number')); ?>" 
+                            style="width:300px;" />
                     </td>
                 </tr>
             </table>
